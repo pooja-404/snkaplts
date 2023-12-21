@@ -21,7 +21,7 @@ const Navsec = () => {
     <nav className='nav-shadow'>
       <Container className='py-3'>
         <div className='d-flex align-items-center justify-content-between'>
-          <img src={logo} alt="logo" className='d-none d-lg-block' />
+          <img src={logo} alt="logo" className='d-none d-lg-block cursor-pointer' />
           <img src={logocard} alt="navimg" className='d-none d-lg-block' />
         </div>
       </Container>
