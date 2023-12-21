@@ -11,7 +11,7 @@ function Firstsection() {
     const [count, setcount] = useState(0);
     return (
         <div>
-            <Container className='pt-lg-4 mt-5'>
+            <Container className='pt-4 mt-5'>
                 <Row className='pb-5 pt-lg-5'>
                     <Col xl={6}>
                         <img src={bigshoe} alt="shoes" className='w-100' />
