@@ -408,9 +408,15 @@
 /* tabsection */
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  color: var(--color-red) !important;
-  border-bottom: 3px solid var(--color-red) !important;
   border-color: none !important;
+  color: #f00 !important;
+
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid var(--color-red) !important;
+
 }
 
 .nav-tabs .nav-link {
@@ -437,7 +443,8 @@
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  color: var(--bs-nav-tabs-link-active-color);
+  color: var(--bs-nav-tabs-link-active-color) !important;
+  color: var(--color-red) !important;
   background-color: none !important;
 }
 
@@ -547,9 +554,10 @@
     font-family: var(--ff-roboto) !important;
     color: var(--color-black) !important;
   }
-     .card {
-       --bs-card-bg: var(--bs-body-bg) !important;
-     }
+
+  .card {
+    --bs-card-bg: var(--bs-body-bg) !important;
+  }
 }
 
 @media (min-width:1200px) {
@@ -570,7 +578,7 @@
     cursor: pointer;
   }
 
- 
+
   :root {
     --fs-xxs: 10px;
     --fs-xs: 14px;
