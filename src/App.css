@@ -420,7 +420,7 @@
 
 .nav {
   --bs-nav-link-padding-x: 0 !important;
-  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-padding-y: 0.5rem !important;
 }
 
 .nav-link {
@@ -440,7 +440,6 @@
   color: var(--bs-nav-tabs-link-active-color);
   background-color: none !important;
 }
-
 
 
 /* nav-section */
