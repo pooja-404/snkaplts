@@ -107,6 +107,10 @@
   background: var(--browm);
 }
 
+.light-black {
+  color: rgba(0, 0, 0, 0.70);
+}
+
 /* / font-size /  */
 .fs-xs {
   font-size: var(--fs-xs);
@@ -209,7 +213,7 @@
   border: 1px solid #E8E8E8;
   background: rgba(196, 196, 196, 0.00);
   padding: 10px 20px;
-  width: 108px;
+  width: 117px;
   height: 45px;
 }
 
@@ -271,6 +275,15 @@
 }
 
 /* shoecard */
+
+.shoecards {
+  transition: 500ms linear;
+  flex-shrink: 0;
+  border-radius: 30px !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  background: var(--color-white);
+}
+
 .shoecards:hover {
   transition: 500ms linear;
   box-shadow: 23px 44px 47px 0px rgba(0, 0, 0, 0.20);
@@ -279,15 +292,16 @@
 }
 
 .cart-btn {
-  border-radius: 21px;
-  background: #28A745;
+  border-radius: 25px;
+  background: var(--color-green);
   padding: 10px 33px;
-  border: 2px solid transparent;
+  border: 3px solid transparent !important;
   transition: 600ms linear;
 }
 
 .cart-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+
 
 }
 
@@ -354,6 +368,11 @@
 .card1:hover {
   transform: scale(1.01);
 
+
+}
+
+.card {
+  --bs-card-bg: none !important;
 }
 
 .op-8 {
@@ -463,6 +482,7 @@
   -webkit-text-stroke: 0.7px var(--color-black);
 }
 
+
 @media (max-width:992px) {
   .mobile {
     flex-direction: column !important;
@@ -481,14 +501,7 @@
 }
 
 @media (min-width:320px) {
-  .shoecards {
-    height: 100% !important;
-    transition: 500ms linear;
-    flex-shrink: 0;
-    border-radius: 17px !important;
-    border: 1px solid rgba(0, 0, 0, 0.12) !important;
-    background: var(--color-white);
-  }
+
 
   .card1 {
     height: 100%;
@@ -497,7 +510,6 @@
     border: none !important;
     transition: all 200ms linear;
     cursor: pointer;
-    border: 2px solid transparent !important;
     border: 2px solid transparent !important;
   }
 
@@ -521,15 +533,7 @@
 
 }
 
-@media (min-width:992px) {
-  .max-w-448 {
-    max-width: 448px;
-  }
-
-  .max-w-610 {
-    max-width: 610px;
-  }
-
+@media (min-width:768px) {
   .shoecards {
     max-width: 312px !important;
     height: 390px !important;
@@ -537,6 +541,25 @@
     border-radius: 17px !important;
     border: 1px solid rgba(0, 0, 0, 0.12) !important;
     background: var(--color-white);
+  }
+
+  .navfont {
+    font-size: var(--fs-sm) !important;
+    font-family: var(--ff-roboto) !important;
+    color: var(--color-black) !important;
+  }
+     .card {
+       --bs-card-bg: var(--bs-body-bg) !important;
+     }
+}
+
+@media (min-width:1200px) {
+  .max-w-448 {
+    max-width: 448px;
+  }
+
+  .max-w-610 {
+    max-width: 610px;
   }
 
   .card1 {
@@ -548,7 +571,7 @@
     cursor: pointer;
   }
 
-
+ 
   :root {
     --fs-xxs: 10px;
     --fs-xs: 14px;
@@ -560,7 +583,7 @@
     --fs-2xl: 30px;
   }
 
-  .gap-lg-56 {
+  .gap-xl-56 {
     gap: 56px;
   }
 

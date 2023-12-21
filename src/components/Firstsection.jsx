@@ -30,7 +30,7 @@ function Firstsection() {
                             </Col>
                         </Row>
                     </Col>
-                    <Col xl={6} className='mt-4 pt-4 pt-lg-0 ps-xl-5 '>
+                    <Col xl={6} className='mt-4 pt-4 pt-xl-0 ps-xl-5 '>
                         <h2 className='color-black ff-poppins fw-semibold fs-2xl' >PREMIUM MENS SPORTS LATHER KEDS</h2>
                         <div className='d-flex pt-2 gap-1 align-items-center'>
                             <svg width="103" height="18" viewBox="0 0 103 18" fill="none"
@@ -73,11 +73,11 @@ function Firstsection() {
                             <a href="" class="text-white cart-btn ff-poppins lh-125 fw-medium fs-md text-nowrap">Add to Cart</a>
                         </div>
                         <div class="d-flex align-items-center gap-3 pt-4">
-                            <p class="color-black ff-poppins lh-125 fw-medium fs-md mb-0">Size:</p>
+                            <p class="color-black ff-poppins lh-125 fw-medium fs-md mb-0 ">Size:</p>
                             <div class="small-btn d-flex align-items-center justify-content-center">
                                 <div class="color-grey ff-josefin fs-20 lh-125 fw-normal bg-transparent border-none">
                                     <label for="cars" hidden>S</label>
-                                    <select name="cars" id="cars" class="border-none outline-none pe-4 gap-2 cursor-pointer">
+                                    <select name="cars" id="cars" class="border-none outline-none pe-4  gap-2 cursor-pointer">
                                         <option value="s">S</option>
                                         <option value="L">L</option>
                                         <option value="M">M</option>

@@ -36,29 +36,29 @@ const Navsec = () => {
             </label>
             <Nav className={`d-flex align-items-center justify-content-center gap-3 justify-content-lg-end mobile ${data ? "end-0" : "right-100"}`}>
               <Nav.Item>
-                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock'>HOME</Nav.Link>
+                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock navfont'>HOME</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock'>SNEAKERS KOPEN
+                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock navfont'>SNEAKERS KOPEN
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock'>INTERVIEWS</Nav.Link>
+                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock navfont'>INTERVIEWS</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock'>SALE
+                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock navfont'>SALE
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock'>SNEAKER VAN DE DAG
+                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock navfont'>SNEAKER VAN DE DAG
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock'>SNEAKER FORUM
+                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock navfont'>SNEAKER FORUM
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock'>BLOG
+                <Nav.Link href="/home" className='ff-roboto fs-sm fw-normal color-black nav-stock navfont'>BLOG
                 </Nav.Link>
               </Nav.Item>
             </Nav>
