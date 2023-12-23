@@ -340,7 +340,6 @@
 .nxt-btn:hover {
   background: var(--color-light-red);
   color: var(--color-white) !important;
-
   border: none
 }
 
