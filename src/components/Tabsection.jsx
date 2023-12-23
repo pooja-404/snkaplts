@@ -11,7 +11,7 @@ function Tabsaction() {
                 id="controlled-tab-example"
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
-                className="mb-3 gap-xl-56  gap-14 pt-3" >
+                className="mb-3 gap-xl-85  gap-14 pt-3" >
                 <Tab eventKey="DESCRIPTION" title="DESCRIPTION" defaultChecked className='ff-poppins fs-md color-black fw-normal op-7'>
                     Sed nec ultricies felis, vitae facilisis ipsum. Morbi id turpis euismod, rhoncus tortor quis, lobortis sapien. Sed imperdiet nulla in leo ullamcorper, in finibus elit porta. Sed eget congue neque, mattis finibus neque. In vel dolor ac augue pretium suscipit. Ut nec massa in ligula vestibulum mattis. Suspendisse imperdiet lorem eleifend nisi euismod, vel consequat ipsum luctus. Morbi auctor vulputate hendrerit. Etiam vel lectus tortor. Pellentesque non pharetra mi. Cura
                 </Tab>

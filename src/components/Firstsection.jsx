@@ -8,25 +8,33 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { useState } from 'react'
 
 function Firstsection() {
-    const [count, setcount] = useState(0);
+    let [count, setCount] = useState(1);
+
+    function incrementCount() {
+        setCount(prevCount => (prevCount < 10 ? prevCount + 1 : prevCount));
+    }
+    function decrementCount() {
+
+        setCount(prevCount => (prevCount > 1 ? prevCount - 1 : 1));
+    }
     return (
         <div>
-            <Container className='pt-4 mt-5'>
+            <Container className='pt-4 mt-5 '>
                 <Row className='pb-5 pt-lg-5'>
                     <Col xl={6}>
                         <img src={bigshoe} alt="shoes" className='w-100' />
                         <Row className='pt-4 justify-content-center'>
-                            <Col lg={3} md={4} className='col-6 text-center'>
-                                <img src={small1} alt="bigshoe" className='pt-3' />
+                            <Col className=' text-center col-3'>
+                                <img src={small1} alt="bigshoe" className='pt-3 w-100' />
                             </Col>
-                            <Col lg={3} md={4} className='col-6 text-center'>
-                                <img src={small2} alt="shoes" className='pt-3' />
+                            <Col className=' text-center col-3'>
+                                <img src={small2} alt="shoes" className='pt-3 w-100' />
                             </Col>
-                            <Col lg={3} md={4} className='col-6 text-center'>
-                                <img src={small3} alt="shoes" className='pt-3' />
+                            <Col className=' text-center col-3'>
+                                <img src={small3} alt="shoes" className='pt-3 w-100' />
                             </Col>
-                            <Col lg={3} md={4} className='col-6 text-center'>
-                                <img src={small4} alt="shoes" className='pt-3' />
+                            <Col className=' text-center col-3'>
+                                <img src={small4} alt="shoes" className='pt-3 w-100' />
                             </Col>
                         </Row>
                     </Col>
@@ -53,7 +61,7 @@ function Firstsection() {
                             </svg>
                             <p className='mb-0 fw-normal lh-134 light-black fs-md ff-poppins'>( 5 Customer Review )</p>
                         </div>
-                        <p className='fs-md ff-poppins lh-185 color-black op-6 fw-normal pt-4 pb-5 max-w-610'>Sed nec ultricies felis,
+                        <p className='fs-md ff-poppins lh-185 color-black op-6 fw-normal mt-3 pt-sm-5 pt-lg-0 pb-5 max-w-610'>Sed nec ultricies felis,
                             vitae
                             facilisis
                             ipsum. Morbi id turpis euismod, rhoncus tortor quis,
@@ -64,11 +72,11 @@ function Firstsection() {
                         <div className='d-flex align-items-center gap-3'>
                             <p className='color-black ff-poppins lh-125 fw-medium fs-md mb-0'>Qty:</p>
                             <div className='small-btn d-flex align-items-center justify-content-center gap-3'>
-                                <button className='color-grey ff-josefin fs-md lh-125 fw-normal border-none bg-transparent'
-                                    onClick={() => setcount(count - 1)}>-</button>
-                                <p class="fs-md ff-josefin color-grey fw-normal lh-125 mb-0" >{count}</p>
-                                <button class="color-grey ff-josefin fs-md lh-125 fw-normal border-none bg-transparent"
-                                    onClick={() => setcount(count + 1)}>+</button>
+                                <button className='color-grey ff-josefin fw-normal lh-125 fw-normal border-none bg-transparent'
+                                    onClick={decrementCount}>-</button>
+                                <p class="fs-20 fs-md ff-josefin color-grey fw-normal lh-125 mb-0" >{count}</p>
+                                <button class=" fs-20 fs-md color-gre ff-josefin fw-normal lh-125 fw-normal border-none bg-transparent"
+                                    onClick={incrementCount}>+</button>
                             </div>
                             <a href="" class="text-white cart-btn ff-poppins lh-125 fw-medium fs-md text-nowrap">Add to Cart</a>
                         </div>

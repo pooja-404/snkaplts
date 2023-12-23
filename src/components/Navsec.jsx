@@ -18,15 +18,15 @@ const Navsec = () => {
     }
   }
   return (
-    <nav className='nav-shadow'>
+    <nav className='nav-shadow z-2 position-relative'>
       <Container className='py-3'>
         <div className='d-flex align-items-center justify-content-between'>
           <img src={logo} alt="logo" className='d-none d-lg-block cursor-pointer' />
-          <img src={logocard} alt="navimg" className='d-none d-lg-block' />
+          <img src={logocard} alt="navimg" className='w_100' />
         </div>
       </Container>
       <div className='shadow1'>
-        <Container className='py-3'>
+        <Container className='py-lg-3'>
           <div className='d-flex align-items-center justify-content-between'>
             <img src={logo} alt="logo" className='d-block d-lg-none cursor-pointer' />
             <label className='menu' onClick={nav}>
